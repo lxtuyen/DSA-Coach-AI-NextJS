@@ -5,7 +5,7 @@ import HowItWorks from "./components/sections/HowItWorks";
 import Pricing from "./components/sections/Pricing";
 import FAQSection from "./components/sections/FAQ";
 
-export default function Home() {
+export default function Landing() {
   return (
     <LandingLayout>
       <HeroSection />
