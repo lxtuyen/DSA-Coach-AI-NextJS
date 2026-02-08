@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, ChevronLeft, ChevronRight, Star, Swords, Target, TrendingUp } from "lucide-react";
+import { BookOpen, ChevronLeft, ChevronRight, LogOut, Star, StickyNote, Swords, Target, TrendingUp, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSidebarStore } from "@/app/store/sidebar.store";
@@ -10,7 +10,10 @@ const menuItems = [
   { href: "/home", icon: BookOpen, label: "AI Recommended", activeColor: "purple" },
   { href: "/favorites", icon: Star, label: "My Favorites", activeColor: "blue" },
   { href: "/progress", icon: TrendingUp, label: "Progress Track", activeColor: "purple" },
+  { href: "/notes", icon: StickyNote, label: "Notes", activeColor: "purple" },
   { href: "/quest", icon: Swords, label: "Quest", activeColor: "gray" },
+  { href: "/settings", icon: User, label: "Settings", activeColor: "purple" },
+  { href: "/", icon: LogOut, label: "Đăng Xuất", activeColor: "purple" },
 ];
 
 export default function Sidebar() {
